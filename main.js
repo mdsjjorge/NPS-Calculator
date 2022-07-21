@@ -10,7 +10,8 @@ const calculate = () => {
 
     for (let i = 0; i <= 10; i++) {
 
-        let numbers = document.querySelector(`#num${i}`);
+        // let numbers = document.querySelector(`#num${i}`);
+        let numbers = document.getElementById(`num${i}`);
         let number = Number(numbers.value);
         totalSum += number;  
 
@@ -25,7 +26,7 @@ const calculate = () => {
 
     promoterPercent = (promoterSum / totalSum) * 100;
     detractorPercent = (detractorSum / totalSum) * 100;
-    totalScore = (promoterPercent - detractorPercent).toFixed(2);
+    totalScore = (promoterPercent - detractorPercent).toFixed(0);
 
     // console.log(`detractorPercent = ${detractorPercent}`);
     // console.log(`promoterPercent = ${promoterPercent}`);
