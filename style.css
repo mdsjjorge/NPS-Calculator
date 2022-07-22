@@ -1,25 +1,29 @@
+/* ===================================
+gerais
+=================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-/* body {
-    background-color: rgba(10, 27, 134, 0.805);
-    font-family: Arial, Helvetica, sans-serif;
-} */
+body{
+    background-image: url(avaliação/imagens/fundo.png);
+}
+p {
+    margin: 4px;
+}
+
+/* ===================================
+header
+=================================== */
 
 header {
-    /* color: white;
-    text-align: center;
-    margin: 30px; */
-
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
-
 .img {
     width: 180px;
     align-self: flex-start;
@@ -29,30 +33,27 @@ header {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
+/* ===================================
+seção main
+=================================== */
+
 .main{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(avaliação/imagens/fundo.png);
-    position: initial;
-    height: 100vh;
-    width: 100vw;
-    /* padding: 30px; */
 }
-
 .container {
     display: flex;
     background-color: #ab226d;
-    /* color: white; */
     width: 80vw;
     max-width: 500px;
     border-radius: 20px;
-    /* padding-left: 30px; */
     flex-direction: column;
     box-shadow: 8px 8px 13px rgba(0, 0, 0, 0.475);
-    margin-top: 50px;
+    position: absolute;
+    top: 100px;
 }
-
 .container-title {
     font-size: 1.4rem;
     margin: 10px;
@@ -60,31 +61,135 @@ header {
 .title {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
-p {
-    margin: 5px;
-}
-#calculate {
-    margin: 0 auto;
-}
+
+/* ===================================
+resultados
+=================================== */
+
 .result {
     display: flex;
     flex-direction: column;
     justify-content: left;
+    margin: 10px 30px;
+    text-align: justify;
 }
+
+/* ===================================
+números
+=================================== */
+
 .number {
     display: flex;
     flex-direction: column;
-    /* width: 200px; */
-    /* justify-content: center; */
     align-items: center;
-    /* margin-left: -30px; */
 }
 .inum {
     width: 100px;
     border-radius: 10px;
     padding: 0 8px;
 }
-.result {
-    margin-left: 30px;
+
+/* ===================================
+fundo colorido dos números
+=================================== */
+
+.num0 {
+    background-color: red;
+    border-radius: 10px;
+    padding-left: 8px;
+}
+.num0:hover {
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.num1 {
+    background-color: rgb(255, 94, 0);
+    border-radius: 10px;
+    padding-left: 8px;
+}
+.num1:hover {
+    background-color: rgb(255, 94, 0, 0.6);
+}
+
+.num2 {
+    background-color: rgb(255, 153, 0);
+    border-radius: 10px;
+    padding-left: 8px;
+}
+.num2:hover {
+    background-color: rgb(255, 153, 0, 0.6);
+}
+
+.num3 {
+    background-color: rgb(255, 221, 0);
+    border-radius: 10px;
+    padding-left: 8px;
+}
+.num3:hover {
+    background-color: rgb(255, 221, 0, 0.6);
+}
+
+.num4 {
+    background-color: rgb(255, 255, 0);
+    border-radius: 10px;
+    padding-left: 8px;
+}
+.num4:hover {
+    background-color: rgb(255, 255, 0, 0.6);
+}
+
+.num5 {
+    background-color: rgb(179, 255, 0);
+    border-radius: 10px;
+    padding-left: 8px;
+}
+.num5:hover {
+    background-color: rgb(179, 255, 0, 0.6);
+}
+
+.num6 {
+    background-color: rgb(179, 255, 0);
+    border-radius: 10px;
+    padding-left: 8px;
+}
+.num6:hover {
+    background-color: rgb(179, 255, 0, 0.6);
+}
+
+.num7 {
+    background-color: rgb(128, 255, 0);
+    border-radius: 10px;
+    padding-left: 8px;
+}
+.num7:hover {
+    background-color: rgb(128, 255, 0, 0.6);
+}
+
+.num8 {
+    background-color: rgb(115, 255, 0);
+    border-radius: 10px;
+    padding-left: 8px;
+}
+.num8:hover {
+    background-color: rgb(115, 255, 0, 0.6);
+}
+
+.num9 {
+    background-color: rgb(30, 255, 0);
+    border-radius: 10px;
+    padding-left: 8px;
+}
+.num9:hover {
+    background-color: rgb(30, 255, 0, 0.6);
+}
+
+.num10 {
+    background-color: rgb(21, 248, 0);
+    border-radius: 10px;
+    padding-left: 8px;
+}
+.num10:hover {
+    background-color: rgb(21, 248, 0, 0.6);
 }
