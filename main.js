@@ -1,3 +1,7 @@
+let resultScore = document.querySelector('.resultScore');
+let resultZone = document.querySelector('.resultZone');
+let resultText = document.querySelector('.resultText');
+
 const calculate = () => {
 
     let totalSum = 0;
@@ -6,14 +10,10 @@ const calculate = () => {
     let detractorSum = 0;
     let detractorPercent = 0;
     let totalScore = 0;
-    let resultScore = document.querySelector('.resultScore');
-    let resultZone = document.querySelector('.resultZone');
-    let resultText = document.querySelector('.resultText');
 
     for (let i = 0; i <= 10; i++) {
 
-        // let numbers = document.querySelector(`#num${i}`);
-        let numbers = document.getElementById(`num${i}`);
+        let numbers = document.querySelector(`#num${i}`);
         let number = Number(numbers.value);
         totalSum += number;  
 
@@ -30,15 +30,11 @@ const calculate = () => {
     detractorPercent = (detractorSum / totalSum) * 100;
     totalScore = (promoterPercent - detractorPercent).toFixed(0);
 
-    // console.log(`detractorPercent = ${detractorPercent}`);
-    // console.log(`promoterPercent = ${promoterPercent}`);
-    // console.log(`totalScore = ${totalScore}`);
-
     if (totalSum != 0) {
         if (totalScore >= 75) {
             resultScore.innerHTML = `<strong>Nota: </strong> ${totalScore}`;
             resultZone.innerHTML = "<strong>Zona: </strong> Excelência";
-            resultText.innerHTML = "<strong>Comentário: </strong> Parabéns, sua empresa satisfaz seus clientes, atende às suas expectativas, garante uma boa experiência ao usuário e conquista consumidores fiéis que recomendam e defendem a marca."
+            resultText.innerHTML = "<strong>Comentário: </strong>2 Parabéns, sua empresa satisfaz seus clientes, atende às suas expectativas, garante uma boa experiência ao usuário e conquista consumidores fiéis que recomendam e defendem a marca."
         } else if (totalScore >= 50) {
             resultScore.innerHTML = `<strong>Nota: </strong> ${totalScore}`;
             resultZone.innerHTML = "<strong>Zona: </strong> Qualidade";
@@ -53,4 +49,16 @@ const calculate = () => {
             resultText.innerHTML = "<strong>Comentário: </strong> Sua empresa deve tomar ações rápidas em relação às suas estratégias. Essa categoria indica que muitos clientes ficaram insatisfeitos com a empresa e que não recomendariam a marca. Eles serão os primeiros a reclamarem, a divulgarem feedbacks negativos sobre suas experiências, podendo engajar uma comunidade de outros clientes.";
         }
     }    
+}
+
+const zerar = () => {
+    for (let i = 0; i <= 10; i++) {
+        let numbers = document.querySelector(`#num${i}`);
+        if (numbers.value !== '') {
+            numbers.value = '';
+            resultScore.innerHTML = "<strong>Nota: </strong>";
+            resultZone.innerHTML = "<strong>Zona: </strong>";
+            resultText.innerHTML = "<strong>Comentário: </strong>";
+        }
+    }
 }
