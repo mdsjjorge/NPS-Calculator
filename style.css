@@ -32,3 +32,8 @@ p {
 #calculate {
     margin: 0 auto;
 }
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
