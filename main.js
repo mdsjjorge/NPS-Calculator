@@ -38,7 +38,7 @@ const calculate = () => {
         if (totalScore >= 75) {
             resultScore.innerHTML = `Nota: ${totalScore}`;
             resultZone.innerHTML = "Zona: Excelência";
-            resultText.innerHTML = "Comentário: Parabéns, sua empresa satisfaz seus clientes, atende às suas expectativas e garante uma boa experiência ao usuário, conquista consumidores fiéis que recomendam e defendem a marca."
+            resultText.innerHTML = "Comentário: Parabéns, sua empresa satisfaz seus clientes, atende às suas expectativas, garante uma boa experiência ao usuário e conquista consumidores fiéis que recomendam e defendem a marca."
         } else if (totalScore >= 50) {
             resultScore.innerHTML = `Nota: ${totalScore}`;
             resultZone.innerHTML = "Zona: Qualidade";

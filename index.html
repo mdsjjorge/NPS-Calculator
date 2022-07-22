@@ -9,40 +9,38 @@
 </head>
 <body>
     <header>
-        <h1>NPS Calculator</h1>
+        <img src="avaliação/imagens/logo-digital.png.webp" class="img">
     </header>
 
-    <section>
-
-        <div id="date">
-            <div class="container-title">
-                <h2 class="title">Pesquisa de satisfação</h2>
+    <section class="main">
+        <div class="container">
+            <div id="date">
+                <div class="container-title">
+                    <h2 class="title">Pesquisa de satisfação</h2>
+                </div>
+                <div class="number" onmouseout="calculate()">
+                    <p>00: <input class="inum" type="number" name="num0" id="num0"></p>
+                    <p>01: <input class="inum" type="number" name="num1" id="num1"></p>
+                    <p>02: <input class="inum" type="number" name="num2" id="num2"></p>
+                    <p>03: <input class="inum" type="number" name="num3" id="num3"></p>
+                    <p>04: <input class="inum" type="number" name="num4" id="num4"></p>
+                    <p>05: <input class="inum" type="number" name="num5" id="num5"></p>
+                    <p>06: <input class="inum" type="number" name="num6" id="num6"></p>
+                    <p>07: <input class="inum" type="number" name="num7" id="num7"></p>
+                    <p>08: <input class="inum" type="number" name="num8" id="num8"></p>
+                    <p>09: <input class="inum" type="number" name="num9" id="num9"></p>
+                    <p>10: <input class="inum" type="number" name="num10" id="num10"></p>
+                </div>
             </div>
-            <div class="satisfaction" onmouseout="calculate()">
-                <p>00: <input class="num" type="number" name="num0" id="num0"></p>
-                <p>01: <input class="num" type="number" name="num1" id="num1"></p>
-                <p>02: <input class="num" type="number" name="num2" id="num2"></p>
-                <p>03: <input class="num" type="number" name="num3" id="num3"></p>
-                <p>04: <input class="num" type="number" name="num4" id="num4"></p>
-                <p>05: <input class="num" type="number" name="num5" id="num5"></p>
-                <p>06: <input class="num" type="number" name="num6" id="num6"></p>
-                <p>07: <input class="num" type="number" name="num7" id="num7"></p>
-                <p>08: <input class="num" type="number" name="num8" id="num8"></p>
-                <p>09: <input class="num" type="number" name="num9" id="num9"></p>
-                <p>10: <input class="num" type="number" name="num10" id="num10"></p>
+    
+            <div>
+                <p class="result">
+                    <span class="resultScore">Nota: </span>
+                    <span class="resultZone">Zona: </span>
+                    <span class="resultText">Comentário: </span>
+                </p>
             </div>
         </div>
-
-        <div>
-            <p class="result">
-                <span class="resultScore">Nota: </span>
-                <span class="resultZone">Zona: </span>
-                <span class="resultText">Comentário: </span>
-            </p>
-        </div>
-<!-- 
-        <div id="result"><p> - Result - </p></div> -->
-
     </section>
 
     <script src="main.js"></script>
