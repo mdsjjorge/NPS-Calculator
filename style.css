@@ -70,6 +70,25 @@ seção main
 }
 
 /* ===================================
+botão zerar
+=================================== */
+
+.btnzera{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+}
+.zera {
+    background-color: white;
+    border-radius: 15%;
+    padding: 3px 8px;
+    border-style: none;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.475);
+    cursor: pointer;
+}
+
+/* ===================================
 resultados
 =================================== */
 
