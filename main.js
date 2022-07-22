@@ -34,19 +34,19 @@ const calculate = () => {
         if (totalScore >= 75) {
             resultScore.innerHTML = `<strong>Nota: </strong> ${totalScore}`;
             resultZone.innerHTML = "<strong>Zona: </strong> Excelência";
-            resultText.innerHTML = "<strong>Comentário: </strong>2 Parabéns, sua empresa satisfaz seus clientes, atende às suas expectativas, garante uma boa experiência ao usuário e conquista consumidores fiéis que recomendam e defendem a marca."
+            resultText.innerHTML = "<strong>Comentário: </strong>Parabéns, sua empresa satisfaz seus clientes, atende às suas expectativas, garante uma boa experiência ao usuário e conquista consumidores fiéis que recomendam e defendem a marca."
         } else if (totalScore >= 50) {
             resultScore.innerHTML = `<strong>Nota: </strong> ${totalScore}`;
             resultZone.innerHTML = "<strong>Zona: </strong> Qualidade";
-            resultText.innerHTML = "<strong>Comentário: </strong> Sua empresa conta com clientes satisfeitos com a marca, mas que ressaltam pontos que deixaram a desejar. Realizar uma avaliação da jornada do cliente é importante para que a empresa possa identificar possíveis falhas.";
+            resultText.innerHTML = "<strong>Comentário: </strong>Sua empresa conta com clientes satisfeitos com a marca, mas que ressaltam pontos que deixaram a desejar. Realizar uma avaliação da jornada do cliente é importante para que a empresa possa identificar possíveis falhas.";
         } else if (totalScore >= 0) {
             resultScore.innerHTML = `<strong>Nota: </strong> ${totalScore}`;
             resultZone.innerHTML = "<strong>Zona: </strong> aperfeiçoamento";
-            resultText.innerHTML = "<strong>Comentário: </strong> Sua empresa deve ter muita atenção com os feedbacks dos seus clientes. Estar situado nesta zona significa que muitos clientes não tiveram uma boa experiência e não ficaram satisfeitos com a empresa. Refazer processos, melhorar estratégias e conhecer melhor as espectativas dos clientes são pontos importantes a serem avaliados.";
+            resultText.innerHTML = "<strong>Comentário: </strong>Sua empresa deve ter muita atenção com os feedbacks dos seus clientes. Estar situado nesta zona significa que muitos clientes não tiveram uma boa experiência e não ficaram satisfeitos com a empresa. Refazer processos, melhorar estratégias e conhecer melhor as espectativas dos clientes são pontos importantes a serem avaliados.";
         } else {
             resultScore.innerHTML = `<strong>Nota: </strong> ${totalScore}`;
             resultZone.innerHTML = "<strong>Zona: </strong> Crítica";
-            resultText.innerHTML = "<strong>Comentário: </strong> Sua empresa deve tomar ações rápidas em relação às suas estratégias. Essa categoria indica que muitos clientes ficaram insatisfeitos com a empresa e que não recomendariam a marca. Eles serão os primeiros a reclamarem, a divulgarem feedbacks negativos sobre suas experiências, podendo engajar uma comunidade de outros clientes.";
+            resultText.innerHTML = "<strong>Comentário: </strong>Sua empresa deve tomar ações rápidas em relação às suas estratégias. Essa categoria indica que muitos clientes ficaram insatisfeitos com a empresa e que não recomendariam a marca. Eles serão os primeiros a reclamarem, a divulgarem feedbacks negativos sobre suas experiências, podendo engajar uma comunidade de outros clientes.";
         }
     }    
 }
