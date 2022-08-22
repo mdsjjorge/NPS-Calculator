@@ -77,17 +77,23 @@ botão zerar
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 5px;
+    margin: 10px;
 }
 .zera {
-    background-color: white;
-    border-radius: 15%;
+    background-image: url(avaliação/imagens/refresh.png);
+    width: 30px;
+    border-radius: 50%;
     padding: 3px 8px;
     border-style: none;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.475);
     cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
 }
-
+.zera:hover {
+    scale: 1.5;
+}
 /* ===================================
 resultados
 =================================== */
